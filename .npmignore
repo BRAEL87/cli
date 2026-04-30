@@ -1,0 +1,25 @@
+# Source TypeScript files (only dist goes to npm)
+*.ts
+!dist/**/*.d.ts
+
+# Dev & test files
+node_modules/
+*.test.ts
+vitest.config.*
+tsconfig.json
+.env
+.env.*
+*.jsonl
+*.json.example
+
+# Docs not needed in package
+HY3_*.md
+TESTING_*.md
+QUICK_START_*.md
+AGENT_*.md
+benchmark/
+scripts/
+
+# Misc
+.nova/
+*.log

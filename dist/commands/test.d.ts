@@ -1,0 +1,6 @@
+/**
+ * Test command - Run agent tests
+ */
+import { Command } from 'commander';
+export declare function registerTestCommand(program: Command): void;
+//# sourceMappingURL=test.d.ts.map
