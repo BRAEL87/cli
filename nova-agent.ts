@@ -17,8 +17,8 @@ const pkg = fs.existsSync(pkgPath) ? JSON.parse(fs.readFileSync(pkgPath, 'utf-8'
 const program = new Command()
 
 program
-    .name('nova')
-    .description('Nova AI coding agent — autonomous, interactive, free')
+    .name('qovyn')
+    .description('Qovyn AI coding agent — autonomous, interactive, free')
     .version(pkg.version, '-v, --version', 'Show version number')
     .helpOption('-h, --help', 'Show help')
     .addHelpText('after', `
@@ -94,10 +94,10 @@ program
         })
     })
 
-// Init command - scaffold .nova/ config in current project
+// Init command - scaffold .qovyn/ config in current project
 program
     .command('init')
-    .description('Set up Nova in the current project')
+    .description('Set up Qovyn in the current project')
     .action(async () => {
         const { runInit } = await import('./commands/init')
         await runInit()
